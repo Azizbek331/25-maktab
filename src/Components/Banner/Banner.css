@@ -1,0 +1,165 @@
+
+.cont2{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 16px;
+}
+
+.conta{
+    border:  1px solid;
+    width: 1173px;
+    height: 600px;
+    background-color: rgb(247, 247, 247);
+    border: none;
+padding-left: 20px;
+padding-right: 20px;
+    border-radius: 10px;
+    padding-top: 16px;
+    justify-content: center;
+    display: flex;
+}
+
+.wrap{
+
+border:  1px solid;
+width: 100%;
+border-radius: 10px;
+height: 289px;
+/* background: linear-gradient(45deg, #3498db, #2ecc71); */
+background: linear-gradient(45deg, #3498db, #2ecc71);
+padding-left: 14px;
+
+padding-right: 14px;
+border: none;
+color: white;
+
+}
+
+.h2{
+align-items: center;
+justify-content: center;
+display: flex;
+margin-top: 30px;
+font-size: 35px;
+}
+
+.p{
+    padding-top: 15px;
+font-size: 18px;
+}
+
+.img{
+width: 100%;
+margin-top: 10px;
+}
+
+/* umumiy button stil */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .btn {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px; /* Yumshoq burchaklar */
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+
+  /* umumiy button stil */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+  }
+  
+  .btn {
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px; /* Yumshoq burchaklar */
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px; /* Matnni kengaytirish */
+  }
+  
+  /* Liquid gradient button */
+  .liquid-btn {
+    background: linear-gradient(45deg, #ff6b6b, #ff9a8b, #ffcd02); /* Gradyent fon (yashil, pushti, sariq) */
+    color: white;
+    position: relative;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3); /* Neon effektli soyalar */
+  }
+  
+  .liquid-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: white;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translateX(-50%) scale(0);
+  }
+  
+  .liquid-btn:hover {
+    background: linear-gradient(45deg, #ff9a8b, #ff6b6b, #ffcd02);
+    transform: translateY(-7px); /* Hoverda yuqoriga ko'tariladi */
+    box-shadow: 0 0 30px rgba(255, 102, 102, 0.5); /* Hoverda kuchaygan neon effekt */
+  }
+  
+  .liquid-btn:hover::before {
+    transform: translateX(-50%) scale(1);
+  }
+  
+  .liquid-btn span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Outline Liquid button */
+  .liquid-outline-btn {
+    background-color: transparent;
+    color: #ff7e5f; /* Qizil outline */
+    border: 2px solid #ff7e5f;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .liquid-outline-btn:hover {
+    background: #ff7e5f;
+    color: white;
+    transform: translateY(-7px); /* Hoverda yuqoriga ko'tariladi */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3); /* Hoverda neon effekt */
+  }
+  
+  .images{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+
+  }

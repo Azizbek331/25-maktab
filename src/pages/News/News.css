@@ -1,0 +1,107 @@
+.h2{
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  /* margin-top: 2px; */
+}
+
+.section{
+background-color: #f8f9fa;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section-wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.container{
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title{
+  color: #3498db;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+section ul{
+list-style-type: none;
+padding: 0;
+}
+
+.section li{
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.section li::before{
+  color: #3498db;
+  position: absolute;
+  left: 0;
+  content: "•";
+}
+
+/* container uchun umumiy stil */
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Sectionlarni yengil ko'tarilish bilan animatsiya qilish */
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  margin-bottom: 20px;
+}
+
+/* Har bir sectionning animatsiyasi */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ustun (title) uchun chiroyli yozuv */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* Umumiy bo'limlarni tartiblash */
+.section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.section-wrapper .section {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effekti */
+.section-wrapper .section:hover {
+  transform: translateY(-5px);
+}
+
+/* Mobil uchun moslashtirish */
+@media (max-width: 768px) {
+  .section-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

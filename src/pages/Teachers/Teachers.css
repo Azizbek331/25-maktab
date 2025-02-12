@@ -1,0 +1,127 @@
+
+
+.h1{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+.oqituvchi-item{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.oqituvchi-wrap{
+    border: 1px solid;
+    width: 100%;
+border: none;
+background: #f5f5f5;
+border-radius: 5px;
+padding-bottom: 15px;
+}
+
+.oqituvchi-wrap h3{
+    color: #333;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.oqituvchi-wrap p{
+    margin: 5px 0;
+    color: #666;
+    padding-left: 15px;
+
+}
+   
+/* Umumiy stil */
+.h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.oqituvchi-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.oqituvchi-wrap {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.oqituvchi-wrap:hover {
+  transform: scale(1.05);
+}
+
+.oqituvchi-wrap h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.oqituvchi-wrap p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Animatsiyalar */
+
+/* Pastdan yuqoriga animatsiya */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+/* Rang o'zgarishi animatsiyasi */
+@keyframes colorChange {
+  0% {
+    background-color: #ff6f61; /* Qizil rang */
+  }
+  50% {
+    background-color: #6b8e23; /* Yashil rang */
+  }
+  100% {
+    background-color: #4682b4; /* Ko'k rang */
+  }
+}
+
+.color-change {
+  animation: colorChange 3s infinite alternate;
+}
+
+/* Aylanish animatsiyasi */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 2s infinite linear;
+}
+
