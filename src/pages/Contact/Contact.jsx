@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import "./Contact.css"
+
 
 
 function Contact() {
@@ -218,10 +220,12 @@ function Contact() {
 
         <div className="form-footer">
           <p className="required-note">* Majburiy maydonlar</p>
+          <Link to={"/"}>
           <button type="submit">
             <i className="fas fa-paper-plane"></i>
             Xabarni yuborish
           </button>
+          </Link>
         </div>
       </form>
     </div>

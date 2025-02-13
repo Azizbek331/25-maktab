@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -13,7 +12,7 @@ const Footer = () => {
             <h3>Bog'lanish</h3>
             <div className="footer-contact">
               <p className='p-wrap'>Telefon: +998 50 900 68 10</p>
-              <p className='p-wrap'>Email example@kompaniya.uz</p>
+              <p className='p-wrap'>Email: azizbekakramjonov78@gmail.com</p>
               <p className='p-wrap'>Manzil: Namangan viloyati,Namangan tumani,Mirishkor MFY</p>
             </div>
           </div>
