@@ -22,22 +22,22 @@ function Navbar() {
 
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
           <li className="nav-item">
-            <Link to="/" className="nav-link">Bosh Sahifa</Link>
+            <Link to="/" onClick={()=>setIsOpen(false)} className="nav-link">Bosh Sahifa</Link>
           </li>
           <li className="nav-item">
-            <Link to="/Bizhaqimizda" className="nav-link">Biz Haqimizda</Link>
+            <Link to="/Bizhaqimizda" onClick={() =>setIsOpen(false)} className="nav-link">Biz Haqimizda</Link>
           </li>
           <li className="nav-item">
-            <Link to="/News" className="nav-link">Yangiliklar</Link>
+            <Link to="/News" onClick={() =>setIsOpen(false)} className="nav-link">Yangiliklar</Link>
           </li>
           <li className="nav-item">
-            <Link to="/teachers" className="nav-link">O'qituvchilar</Link>
+            <Link to="/teachers" onClick={() =>setIsOpen(false)} className="nav-link">O'qituvchilar</Link>
           </li>
                <li className="nav-item">
-            <Link to="/DarsLavhalar" className="nav-link">Dars lavhalar</Link>
+            <Link to="/DarsLavhalar" onClick={() => setIsOpen(false)} className="nav-link">Dars lavhalar</Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className="nav-link">Aloqa</Link>
+            <Link to="/contact" onClick={() => setIsOpen(false)} className="nav-link">Aloqa</Link>
           </li>
      
         </ul>
